@@ -1,3 +1,6 @@
+---
+title: CleanCode
+---
 #cleancode 
 # CleanCode
 Clean Code sind Praktiken, welche die Qualität des Codes durch BestPractices verbessern sollen.
