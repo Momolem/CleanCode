@@ -4,13 +4,13 @@ aliases: [Green Grade]
 #cleancode 
 # Grüner Grad
 ## Prinzipien
-- [[Open Closed Principle]]
-- [[Tell, don't ask]]
-- [[Law of Demeter]]
+- [[CleanCode/Open Closed Principle]]
+- [[CleanCode/Tell, don't ask]]
+- [[CleanCode/Law of Demeter]]
 
 ## Praktiken
-- [[Continuous Integration]]
-- [[Statical Code Analysis]]
-- [[Inversion of Control Container]]
-- [[Share Experience]]
-- [[Error Measurement]]
+- [[CleanCode/Continuous Integration]]
+- [[CleanCode/Statical Code Analysis]]
+- [[CleanCode/Inversion of Control Container]]
+- [[CleanCode/Share Experience]]
+- [[CleanCode/Error Measurement]]

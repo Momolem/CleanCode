@@ -4,7 +4,7 @@
 >**Warum?**
 >Komposition fördert die lose Kopplung und die Testbarkeit eines Systems und ist oft flexibler.
 
-Für die Wiederverwendung von Funktionalität kennt die Objektorientierte Programmierung ([[OOP]]) zwei sehr bekannte Kandidaten: Die Vererbung (whitebox – reuse) und die Komposition (blackbox – reuse). Verwendet man Funktionalität wieder durch das Ableiten von einer Klasse, so ist die Subklasse abhängig von der Elternklasse. Dies macht ein System in vielen Fällen unnötig komplex, schlechter testbar und erschwert das Austauschen von Funktionalität zur Laufzeit. [[Clean Code Developer]] hat für das korrekte Ableiten das [[Liskov Substitution Principle]] bereit, das es dabei zu befolgen gilt.
+Für die Wiederverwendung von Funktionalität kennt die Objektorientierte Programmierung ([[OOP]]) zwei sehr bekannte Kandidaten: Die Vererbung (whitebox – reuse) und die Komposition (blackbox – reuse). Verwendet man Funktionalität wieder durch das Ableiten von einer Klasse, so ist die Subklasse abhängig von der Elternklasse. Dies macht ein System in vielen Fällen unnötig komplex, schlechter testbar und erschwert das Austauschen von Funktionalität zur Laufzeit. [[CleanCode/Clean Code Developer]] hat für das korrekte Ableiten das [[CleanCode/Liskov Substitution Principle]] bereit, das es dabei zu befolgen gilt.
 
 Bei der Komposition verwendet eine Klasse eine andere. Verwendet man dazu eine klar definierte Schnittstelle, fördert das die Entkopplung. Auch können verschiedene Implementationen einfach ausgetauscht werden. Bevor man sich also der  stellt, fordert Favour Composition over Inheritance, sich die Frage zu stellen, ob man der Komposition nicht Vorrang geben kann.
 

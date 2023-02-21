@@ -104,7 +104,7 @@ class Application is
 - **Use the Facade when you want to structure a subsystem into layers.**
 	Create facades to define entry points to each level of a subsystem. You can reduce coupling between multiple subsystems by requiring them to communicate only through facades.
 	
-	For example, let’s return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each another via those facades. This approach looks very similar to the [[Mediator]] pattern.
+	For example, let’s return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each another via those facades. This approach looks very similar to the [[CleanCode/Mediator]] pattern.
 
 ## How to Implement
 1.  Check whether it’s possible to provide a simpler interface than what an existing subsystem already provides. You’re on the right track if this interface makes the client code independent from many of the subsystem’s classes.
@@ -118,11 +118,11 @@ class Application is
 | You can isolate your code from the complexity of a subsystem. | A facade can become a god object coupled to all classes of an app. |
 
 ## Relations with Other Patterns
-- [[Facade]] defines a new interface for existing objects, whereas [[Adapter]] tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.
-- [[Abstract Factory ]]can serve as an alternative to [[Facade]] when you only want to hide the way the subsystem objects are created from the client code.
-- [[Flyweight]] shows how to make lots of little objects, whereas [[Facade]] shows how to make a single object that represents an entire subsystem.
-- [[Facade]] and [[Mediator]] have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
-	- [[Facade]] defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
-	- [[Mediator]] centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
-- A [[Facade]] class can often be transformed into a [[Singleton]] since a single facade object is sufficient in most cases.
-- [[Facade]] is similar to [[Proxy]] in that both buffer a complex entity and initialize it on its own. Unlike [[Facade]], [[Proxy]] has the same interface as its service object, which makes them interchangeable.
+- [[CleanCode/Facade]] defines a new interface for existing objects, whereas [[CleanCode/Adapter]] tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.
+- [[CleanCode/Abstract Factory ]]can serve as an alternative to [[CleanCode/Facade]] when you only want to hide the way the subsystem objects are created from the client code.
+- [[CleanCode/Flyweight]] shows how to make lots of little objects, whereas [[CleanCode/Facade]] shows how to make a single object that represents an entire subsystem.
+- [[CleanCode/Facade]] and [[CleanCode/Mediator]] have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+	- [[CleanCode/Facade]] defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
+	- [[CleanCode/Mediator]] centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
+- A [[CleanCode/Facade]] class can often be transformed into a [[CleanCode/Singleton]] since a single facade object is sufficient in most cases.
+- [[CleanCode/Facade]] is similar to [[CleanCode/Proxy]] in that both buffer a complex entity and initialize it on its own. Unlike [[CleanCode/Facade]], [[CleanCode/Proxy]] has the same interface as its service object, which makes them interchangeable.

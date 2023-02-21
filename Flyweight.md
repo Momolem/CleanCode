@@ -155,8 +155,8 @@ class Forest is
 || The code becomes much more complicated. New team members will always be wondering why the state of an entity was separated in such a way.|
 
 ## Relations with Other Patterns
-- You can implement shared leaf nodes of the [[Composite]] tree as Flyweights to save some RAM.
-- Flyweight shows how to make lots of little objects, whereas [[Facade]] shows how to make a single object that represents an entire subsystem.
-- Flyweight would resemble [[Singleton]] if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
-	1. There should be only one [[Singleton]] instance, whereas a Flyweight class can have multiple instances with different intrinsic states.
-	2. The [[Singleton]] object can be mutable. Flyweight objects are immutable.
+- You can implement shared leaf nodes of the [[CleanCode/Composite]] tree as Flyweights to save some RAM.
+- Flyweight shows how to make lots of little objects, whereas [[CleanCode/Facade]] shows how to make a single object that represents an entire subsystem.
+- Flyweight would resemble [[CleanCode/Singleton]] if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
+	1. There should be only one [[CleanCode/Singleton]] instance, whereas a Flyweight class can have multiple instances with different intrinsic states.
+	2. The [[CleanCode/Singleton]] object can be mutable. Flyweight objects are immutable.

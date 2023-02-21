@@ -165,23 +165,23 @@ class ImageEditor is
     While implementing the methods of the component interface, remember that a container is supposed to be delegating most of the work to sub-elements.
 5. Finally, define the methods for adding and removal of child elements in the container.
     
-   Keep in mind that these operations can be declared in the component interface. This would violate the _[[Interface Segragation Principle]]_ because the methods will be empty in the leaf class. However, the client will be able to treat all the elements equally, even when composing the tree.
+   Keep in mind that these operations can be declared in the component interface. This would violate the _[[CleanCode/Interface Segragation Principle]]_ because the methods will be empty in the leaf class. However, the client will be able to treat all the elements equally, even when composing the tree.
 
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
 | You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage. |   It might be difficult to provide a common interface for classes whose functionality differs too much. In certain scenarios, you’d need to overgeneralize the component interface, making it harder to comprehend. |
-| _[[Open Closed Principle]]_. You can introduce new element types into the app without breaking the existing code, which now works with the object tree. ||
+| _[[CleanCode/Open Closed Principle]]_. You can introduce new element types into the app without breaking the existing code, which now works with the object tree. ||
 
 ## Relations with Other Patterns
-- You can use [[Builder]] when creating complex Composite trees because you can program its construction steps to work recursively.
-- [[Chain of Responsibility]] is often used in conjunction with Composite. In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
-- You can use [[Iterator|Iterators]] to traverse Composite trees.
-- You can use [[Visitor]] to execute an operation over an entire Composite tree.
-- You can implement shared leaf nodes of the Composite tree as [[Flyweight|Flyweights]] to save some RAM.
-- Composite and [[Decorator]] have similar structure diagrams since both rely on recursive composition to organize an open-ended number of objects.
+- You can use [[CleanCode/Builder]] when creating complex Composite trees because you can program its construction steps to work recursively.
+- [[CleanCode/Chain of Responsibility]] is often used in conjunction with Composite. In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+- You can use [[CleanCode/Iterator|Iterators]] to traverse Composite trees.
+- You can use [[CleanCode/Visitor]] to execute an operation over an entire Composite tree.
+- You can implement shared leaf nodes of the Composite tree as [[CleanCode/Flyweight|Flyweights]] to save some RAM.
+- Composite and [[CleanCode/Decorator]] have similar structure diagrams since both rely on recursive composition to organize an open-ended number of objects.
 
-	A [[Decorator]] is like a Composite but only has one child component. There’s another significant difference: [[Decorator]] adds additional responsibilities to the wrapped object, while Composite just “sums up” its children’s results.
+	A [[CleanCode/Decorator]] is like a Composite but only has one child component. There’s another significant difference: [[CleanCode/Decorator]] adds additional responsibilities to the wrapped object, while Composite just “sums up” its children’s results.
 	
-	However, the patterns can also cooperate: you can use [[Decorator]] to extend the behavior of a specific object in the Composite tree.
-- Designs that make heavy use of Composite and [[Decorator]] can often benefit from using [[Prototype]]. Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
+	However, the patterns can also cooperate: you can use [[CleanCode/Decorator]] to extend the behavior of a specific object in the Composite tree.
+- Designs that make heavy use of Composite and [[CleanCode/Decorator]] can often benefit from using [[CleanCode/Prototype]]. Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.

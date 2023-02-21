@@ -4,15 +4,15 @@ aliases: [Yellow Grade]
 #cleancode 
 # Gelber Grad
 ## Prinzipien
-- [[Interface Segragation Principle]]
-- [[Dependency Inversion Principle]]
-- [[Liskov Substitution Principle]]
-- [[Principle of Least Astonishment]]
-- [[Information Hiding Principle]]
+- [[CleanCode/Interface Segragation Principle]]
+- [[CleanCode/Dependency Inversion Principle]]
+- [[CleanCode/Liskov Substitution Principle]]
+- [[CleanCode/Principle of Least Astonishment]]
+- [[CleanCode/Information Hiding Principle]]
 
 ## Praktiken
-- [[Automated Unit Tests]]
-- [[Mockups]]
-- [[Code Coverage Analysis]]
-- [[Partizipation in Professional Events]]
-- [[Complex Refactorings]]
+- [[CleanCode/Automated Unit Tests]]
+- [[CleanCode/Mockups]]
+- [[CleanCode/Code Coverage Analysis]]
+- [[CleanCode/Partizipation in Professional Events]]
+- [[CleanCode/Complex Refactorings]]

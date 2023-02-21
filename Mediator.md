@@ -174,7 +174,7 @@ class Checkbox extends Component is
     
 3.  Implement the concrete mediator class. Consider storing references to all components inside the mediator. This way, you could call any component from the mediator’s methods.
     
-4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a [[Factory]] or a [[Facade]].
+4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a [[CleanCode/Factory]] or a [[CleanCode/Facade]].
     
 5.  Components should store a reference to the mediator object. The connection is usually established in the component’s constructor, where a mediator object is passed as an argument.
     
@@ -182,26 +182,26 @@ class Checkbox extends Component is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| [[Single Responsibility Principle]]. You can extract the communications between various components into a single place, making it easier to comprehend and maintain. |  Over time a mediator can evolve into a [[God Object]].
-| [[Open Closed Principle]]. You can introduce new mediators without having to change the actual components. ||
+| [[CleanCode/Single Responsibility Principle]]. You can extract the communications between various components into a single place, making it easier to comprehend and maintain. |  Over time a mediator can evolve into a [[God Object]].
+| [[CleanCode/Open Closed Principle]]. You can introduce new mediators without having to change the actual components. ||
 | You can reduce coupling between various components of a program.||
 | You can reuse individual components more easily.||
 
 ## Relations with Other Patterns
-- [[Chain of Responsibility]], [[Command]], Mediator and [[Observer]] address various ways of connecting senders and receivers of requests:
-	- [[Chain of Responsibility]] passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-	- [[Command]] establishes unidirectional connections between senders and receivers.
+- [[CleanCode/Chain of Responsibility]], [[CleanCode/Command]], Mediator and [[CleanCode/Observer]] address various ways of connecting senders and receivers of requests:
+	- [[CleanCode/Chain of Responsibility]] passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+	- [[CleanCode/Command]] establishes unidirectional connections between senders and receivers.
 	- Mediator eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-	- [[Observer]] lets receivers dynamically subscribe to and unsubscribe from receiving requests.
-- [[Facade]] and Mediator have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
-	- [[Facade]] defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the [[Facade]]. Objects within the subsystem can communicate directly.
+	- [[CleanCode/Observer]] lets receivers dynamically subscribe to and unsubscribe from receiving requests.
+- [[CleanCode/Facade]] and Mediator have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+	- [[CleanCode/Facade]] defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the [[CleanCode/Facade]]. Objects within the subsystem can communicate directly.
 	- Mediator centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
-- The difference between Mediator and [[Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
+- The difference between Mediator and [[CleanCode/Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
 	
-	The primary goal of Mediator is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of [[Observer]] is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
+	The primary goal of Mediator is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of [[CleanCode/Observer]] is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
 
-	There’s a popular implementation of the Mediator pattern that relies on [[Observer]]. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to [[Observer]].
+	There’s a popular implementation of the Mediator pattern that relies on [[CleanCode/Observer]]. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When Mediator is implemented this way, it may look very similar to [[CleanCode/Observer]].
 
-	When you’re confused, remember that you can implement the Mediator pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble [[Observer]] but will still be an instance of the Mediator pattern.
+	When you’re confused, remember that you can implement the Mediator pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble [[CleanCode/Observer]] but will still be an instance of the Mediator pattern.
 
 	Now imagine a program where all components have become publishers, allowing dynamic connections between each other. There won’t be a centralized mediator object, only a distributed set of observers.

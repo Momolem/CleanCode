@@ -2,6 +2,6 @@
 # CleanCode
 Clean Code sind Praktiken, welche die Qualität des Codes durch BestPractices verbessern sollen.
 
-Die Prinzipien basieren Hauptsächlich auf dem Buch [[Clean Code (Book)]] von [[Robert C. Martin]].
+Die Prinzipien basieren Hauptsächlich auf dem Buch [[Clean Code (Book)]] von [[CleanCode/Robert C. Martin]].
 
-Ein Praktischer Ansatz um Clean Code zu meistern ist der [[Clean Code Developer]]
+Ein Praktischer Ansatz um Clean Code zu meistern ist der [[CleanCode/Clean Code Developer]]

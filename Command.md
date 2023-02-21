@@ -32,7 +32,7 @@ And here’s the ugliest part. Some operations, such as copying/pasting text, wo
 Initially, when our app only had the toolbar, it was okay to place the implementation of various operations into the button subclasses. In other words, having the code for copying text inside the `CopyButton` subclass was fine. But then, when you implement context menus, shortcuts, and other stuff, you have to either duplicate the operation’s code in many classes or make menus dependent on buttons, which is an even worse option.
 
 ## Solution
-Good software design is often based on the _principle of [[Separation of Concerns]]_, which usually results in breaking an app into layers. The most common example: a layer for the graphical user interface and another layer for the business logic. The GUI layer is responsible for rendering a beautiful picture on the screen, capturing any input and showing results of what the user and the app are doing. However, when it comes to doing something important, like calculating the trajectory of the moon or composing an annual report, the GUI layer delegates the work to the underlying layer of business logic.
+Good software design is often based on the _principle of [[CleanCode/Separation of Concerns]]_, which usually results in breaking an app into layers. The most common example: a layer for the graphical user interface and another layer for the business logic. The GUI layer is responsible for rendering a beautiful picture on the screen, capturing any input and showing results of what the user and the app are doing. However, when it comes to doing something important, like calculating the trajectory of the moon or composing an annual report, the GUI layer delegates the work to the underlying layer of business logic.
 
 In the code it might look like this: a GUI object calls a method of a business logic object, passing it some arguments. This process is usually described as one object sending another a _request_.
 
@@ -91,7 +91,7 @@ In this example, the **Command** pattern helps to track the history of execute
 
 Undoable operations in a text editor.
 
-Commands which result in changing the [[State]] of the editor (e.g., cutting and pasting) make a backup copy of the editor’s state before executing an operation associated with the command. After a command is executed, it’s placed into the command history (a stack of command objects) along with the backup copy of the editor’s state at that point. Later, if the user needs to revert an operation, the app can take the most recent command from the history, read the associated backup of the editor’s state, and restore it.
+Commands which result in changing the [[CleanCode/State]] of the editor (e.g., cutting and pasting) make a backup copy of the editor’s state before executing an operation associated with the command. After a command is executed, it’s placed into the command history (a stack of command objects) along with the backup copy of the editor’s state at that point. Later, if the user needs to revert an operation, the app can take the most recent command from the history, read the associated backup of the editor’s state, and restore it.
 
 The client code (GUI elements, command history, etc.) isn’t coupled to concrete command classes because it works with commands via the command interface. This approach lets you introduce new commands into the app without breaking any existing code.
 
@@ -242,7 +242,7 @@ class Application is
 	
 	To be able to revert operations, you need to implement the history of performed operations. The command history is a stack that contains all executed command objects along with related backups of the application’s state.
 	
-	This method has two drawbacks. First, it isn’t that easy to save an application’s state because some of it can be private. This problem can be mitigated with the [[Memento]] pattern.
+	This method has two drawbacks. First, it isn’t that easy to save an application’s state because some of it can be private. This problem can be mitigated with the [[CleanCode/Memento]] pattern.
 	
 	Second, the state backups may consume quite a lot of RAM. Therefore, sometimes you can resort to an alternative implementation: instead of restoring the past state, the command performs the inverse operation. The reverse operation also has a price: it may turn out to be hard or even impossible to implement.
 
@@ -259,27 +259,27 @@ class Application is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| [[Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform these operations. |The code may become more complicated since you’re introducing a whole new layer between senders and receivers.|
-| [[Open Closed Principle]]. You can introduce new commands into the app without breaking existing client code. ||
+| [[CleanCode/Single Responsibility Principle]]. You can decouple classes that invoke operations from classes that perform these operations. |The code may become more complicated since you’re introducing a whole new layer between senders and receivers.|
+| [[CleanCode/Open Closed Principle]]. You can introduce new commands into the app without breaking existing client code. ||
 | You can implement undo/redo. ||
 | You can implement deferred execution of operations. ||
 | You can assemble a set of simple commands into a complex one.||
 
 
 ## Relations with Other Patterns
-- [[Chain of Responsibility]], [[Command]], [[Mediator]] and [[Observer]] address various ways of connecting senders and receivers of requests:
-	- [[Chain of Responsibility]] passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-	- [[Command]] establishes unidirectional connections between senders and receivers.
-	- [[Mediator]] eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a [[Mediator]] object.
-	- [[Observer]] lets receivers dynamically subscribe to and unsubscribe from receiving requests.
-- Handlers in [[Chain of Responsibility]] can be implemented as [[Command|Commands]]. In this case, you can execute a lot of different operations over the same context object, represented by a request.
+- [[CleanCode/Chain of Responsibility]], [[CleanCode/Command]], [[CleanCode/Mediator]] and [[CleanCode/Observer]] address various ways of connecting senders and receivers of requests:
+	- [[CleanCode/Chain of Responsibility]] passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+	- [[CleanCode/Command]] establishes unidirectional connections between senders and receivers.
+	- [[CleanCode/Mediator]] eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a [[CleanCode/Mediator]] object.
+	- [[CleanCode/Observer]] lets receivers dynamically subscribe to and unsubscribe from receiving requests.
+- Handlers in [[CleanCode/Chain of Responsibility]] can be implemented as [[CleanCode/Command|Commands]]. In this case, you can execute a lot of different operations over the same context object, represented by a request.
 	
-	However, there’s another approach, where the request itself is a [[Command]] object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
+	However, there’s another approach, where the request itself is a [[CleanCode/Command]] object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
 
-- You can use [[Command]] and [[Memento]] together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
+- You can use [[CleanCode/Command]] and [[CleanCode/Memento]] together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
 
-- [[Command]] and [[Strategy]] may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
-	- You can use [[Command]] to convert any operation into an object. The operation’s parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
-	- On the other hand, [[Strategy]] usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
-- [[Prototype]] can help when you need to save copies of Commands into history.
-- You can treat Visitor as a powerful version of the [[Command]] pattern. Its objects can execute operations over various objects of different classes.
+- [[CleanCode/Command]] and [[CleanCode/Strategy]] may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
+	- You can use [[CleanCode/Command]] to convert any operation into an object. The operation’s parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
+	- On the other hand, [[CleanCode/Strategy]] usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
+- [[CleanCode/Prototype]] can help when you need to save copies of Commands into history.
+- You can treat Visitor as a powerful version of the [[CleanCode/Command]] pattern. Its objects can execute operations over various objects of different classes.

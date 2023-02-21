@@ -1,8 +1,8 @@
 #cleancode 
 # SOLID
-The SOLID Principles are a part of the [[Clean Code]] Principles. The letters stand for:
-- [[Single Responsibility Principle]]
-- [[Open Closed Principle]]
-- [[Liskov Substitution Principle]]
-- [[Interface Segragation Principle]]
-- [[Dependency Inversion Principle]]
+The SOLID Principles are a part of the [[CleanCode/Clean Code]] Principles. The letters stand for:
+- [[CleanCode/Single Responsibility Principle]]
+- [[CleanCode/Open Closed Principle]]
+- [[CleanCode/Liskov Substitution Principle]]
+- [[CleanCode/Interface Segragation Principle]]
+- [[CleanCode/Dependency Inversion Principle]]
