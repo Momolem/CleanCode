@@ -1,4 +1,5 @@
 ---
+title: "Decorator"
 aliases: [Wrapper]
 ---
 tags:  #cleancode/designpatterns 

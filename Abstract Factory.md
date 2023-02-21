@@ -1,4 +1,5 @@
 ---
+title: "Abstract Factory"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

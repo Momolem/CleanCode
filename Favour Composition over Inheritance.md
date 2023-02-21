@@ -1,3 +1,6 @@
+---
+title: "Favour Composition over Inheritance"
+---
 #cleancode 
 # Favour Composition over Inheritance (FCoI)
 

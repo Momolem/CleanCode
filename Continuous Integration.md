@@ -1,4 +1,5 @@
 ---
+title: "Continuous Integration"
 aliases: [CI]
 ---
 tags: #cleancode 

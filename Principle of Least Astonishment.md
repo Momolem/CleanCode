@@ -1,3 +1,6 @@
+---
+title: "Principle of Least Astonishment"
+---
 #cleancode 
 # Principle of Least Astonishment
 

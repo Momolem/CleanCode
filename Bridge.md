@@ -1,4 +1,5 @@
 ---
+title: "Bridge"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

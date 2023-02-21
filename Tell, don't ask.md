@@ -1,4 +1,5 @@
 ---
+title: "Tell, don't ask"
 aliases: []
 ---
 tags: #cleancode 

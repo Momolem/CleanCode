@@ -1,3 +1,6 @@
+---
+title: "KISS"
+---
 #cleancode 
 # Keep it simple, stupid (KISS)
 

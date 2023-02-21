@@ -1,4 +1,5 @@
 ---
+title: "Single Responsibility Principle"
 aliases: [SRP]
 ---
 #cleancode 

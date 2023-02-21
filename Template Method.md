@@ -1,4 +1,5 @@
 ---
+title: "Template Method"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

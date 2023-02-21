@@ -1,3 +1,6 @@
+---
+title: "DRY"
+---
 #cleancode 
 # Don’t Repeat Yourself (DRY)
 

@@ -1,4 +1,5 @@
 ---
+title: "Gelber Grad"
 aliases: [Yellow Grade]
 ---
 #cleancode 

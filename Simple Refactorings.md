@@ -1,3 +1,6 @@
+---
+title: "Simple Refactorings"
+---
 #cleancode 
 # Simple Refactorings
 

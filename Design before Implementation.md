@@ -1,4 +1,5 @@
 ---
+title: "Design before Implementation"
 aliases: []
 ---
 tags: #cleancode 

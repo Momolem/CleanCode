@@ -1,4 +1,5 @@
 ---
+title: "Proxy"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

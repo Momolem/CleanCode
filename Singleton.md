@@ -1,4 +1,5 @@
 ---
+title: "Singleton"
 aliases: []
 ---
 tags: #cleancode/designpatterns 

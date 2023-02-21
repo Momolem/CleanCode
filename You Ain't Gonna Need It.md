@@ -1,4 +1,5 @@
 ---
+title: "You Ain't Gonna Need It"
 aliases: [YAGNI]
 ---
 tags: #cleancode 

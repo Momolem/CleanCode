@@ -1,4 +1,5 @@
 ---
+title: "Iterator"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

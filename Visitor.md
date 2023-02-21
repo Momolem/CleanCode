@@ -1,4 +1,5 @@
 ---
+title: "Visitor"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

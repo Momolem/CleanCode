@@ -1,4 +1,5 @@
 ---
+title: "Roter Grad"
 aliases: [Red Grade]
 ---
 #cleancode

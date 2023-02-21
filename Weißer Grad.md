@@ -1,4 +1,5 @@
 ---
+title: "Weißer Grad"
 aliases: [White Grade]
 ---
 tags: #cleancode 

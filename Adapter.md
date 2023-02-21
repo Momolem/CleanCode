@@ -1,4 +1,5 @@
 ---
+title: "Adapter"
 aliases: [Wrapper]
 ---
 tags:  #cleancode/designpatterns 

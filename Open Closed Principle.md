@@ -1,3 +1,6 @@
+---
+title: "Open Closed Principle"
+---
 #cleancode 
 # Open Closed Principle (OCP)
 >[!question] **Warum?**

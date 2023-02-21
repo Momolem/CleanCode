@@ -1,4 +1,5 @@
 ---
+title: "Law of Demeter"
 aliases: [LoD]
 ---
 tags: #cleancode 

@@ -1,4 +1,5 @@
 ---
+title: "Observer"
 aliases: [Event-Subscriber, Listener]
 ---
 tags:  #cleancode/designpatterns 

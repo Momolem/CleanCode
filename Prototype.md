@@ -1,4 +1,5 @@
 ---
+title: "Prototype"
 aliases: [Clone]
 ---
 tags:  #cleancode/designpatterns 

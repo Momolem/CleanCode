@@ -1,4 +1,5 @@
 ---
+title: "Single Level of Abstraction"
 aliases: []
 ---
 tags:  #cleancode 

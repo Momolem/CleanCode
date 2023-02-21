@@ -1,4 +1,5 @@
 ---
+title: "Automated Integrationtests"
 aliases: []
 ---
 tags: #cleancode 

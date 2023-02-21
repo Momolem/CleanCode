@@ -1,4 +1,5 @@
 ---
+title: "Chain of Responsibility"
 aliases: [CoR, Chain of Command]
 ---
 tags:  #cleancode/designpatterns 

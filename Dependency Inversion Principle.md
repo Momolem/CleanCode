@@ -1,3 +1,6 @@
+---
+title: "Dependency Inversion Principle"
+---
 #cleancode 
 # Dependency Inversion Principle (DIP)
 

@@ -1,4 +1,5 @@
 ---
+title: "Composite"
 aliases: [Object Tree]
 ---
 tags:  #cleancode/designpatterns 

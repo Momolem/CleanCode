@@ -1,4 +1,5 @@
 ---
+title: "Separation of Concerns"
 aliases: []
 ---
 tags:  #cleancode 

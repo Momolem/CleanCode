@@ -1,4 +1,5 @@
 ---
+title: "Implementation Reflects Design"
 aliases: []
 ---
 tags: #cleancode 

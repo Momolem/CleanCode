@@ -1,4 +1,5 @@
 ---
+title: "Mockups"
 aliases: [Stub, Dummy, Fake]
 ---
 #cleancode 

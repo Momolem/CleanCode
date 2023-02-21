@@ -1,4 +1,5 @@
 ---
+title: "Blauer Grad"
 aliases: [Blue Grade]
 ---
 tags: #cleancode 

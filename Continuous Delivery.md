@@ -1,4 +1,5 @@
 ---
+title: "Continuous Delivery"
 aliases: [CD]
 ---
 tags: #cleancode 

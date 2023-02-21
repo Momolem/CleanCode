@@ -1,4 +1,5 @@
 ---
+title: "Statical Code Analysis"
 aliases: []
 ---
 tags:  #cleancode 

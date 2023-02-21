@@ -1,4 +1,5 @@
 ---
+title: "Integration Tests"
 aliases: [Integrationstests]
 ---
 tags: #cleancode 

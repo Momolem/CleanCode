@@ -1,4 +1,5 @@
 ---
+title: "Clean Code Developer"
 aliases: [CCD]
 ---
 #cleancode 

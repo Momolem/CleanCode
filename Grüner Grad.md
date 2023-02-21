@@ -1,4 +1,5 @@
 ---
+title: "Grüner Grad"
 aliases: [Green Grade]
 ---
 #cleancode 

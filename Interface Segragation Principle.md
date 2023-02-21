@@ -1,3 +1,6 @@
+---
+title: "Interface Segragation Principle"
+---
 #cleancode 
 # Interface Segregation Principle (ISP)
 

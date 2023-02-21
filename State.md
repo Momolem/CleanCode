@@ -1,4 +1,5 @@
 ---
+title: "State"
 aliases: []
 ---
 tags:  #cleancode/designpatterns 

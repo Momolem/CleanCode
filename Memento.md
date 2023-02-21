@@ -1,4 +1,5 @@
 ---
+title: "Memento"
 aliases: [Snapshot]
 ---
 tags:  #cleancode/designpatterns 

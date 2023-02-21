@@ -1,4 +1,5 @@
 ---
+title: "Strategy"
 aliases: [Strategy Pattern]
 ---
 tags: #cleancode/designpatterns 

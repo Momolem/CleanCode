@@ -1,4 +1,5 @@
 ---
+title: "Command"
 aliases: [Action, Transaction]
 ---
 tags:  #cleancode/designpatterns 
