@@ -5,6 +5,8 @@ title: Clean Code Developer
 ---
 #cleancode 
 # Clean Code Developer
+>[!warning] Disclaimer
+> Die hiermit verbundenen Artikel stammen von der Clean-Code-Developer Website! Siehe [[#Source]]
 
 ## Die Grade
 - [[CleanCode/Roter Grad]]
