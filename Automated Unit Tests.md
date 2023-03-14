@@ -3,12 +3,12 @@ tags: [cleancode]
 title: Automated Unit Tests
 ---
 #cleancode 
-# Automated [[Unit Test|Unit Tests]]
+# Automated [[CleanCode/Unit Test|Unit Tests]]
 
 >**Warum?**
 >Nur automatisierte Tests werden auch wirklich konsequent ausgeführt. Je punktgenauer sie Code testen, desto besser.
 
-Im [[Orangener Grad|Orangenen Grad]] haben wir [[Integration Tests]] eingeführt, nun geht es um [[Unit Test|Unit Tests]]. Im Gegensatz zu [[Integration Tests|Integrationstests]] wird bei [[Unit Test|Unit Tests]] eine einzelne Funktionseinheit (vor allem Klassen, aber auch Methoden oder Komponenten) isoliert getestet. Dazu ist es erforderlich, diese Funktionseinheit von ihren Abhängigkeiten befreien zu können. Sollen [[Unit Test|Unit Tests]] im Nachhinein für bestehenden Code ergänzt werden, sind häufig Refaktorisierungen erforderlich. Wir haben durch die [[Integration Tests|Integrationstests]] die Sicherheit, dass wir dabei keine Fehler einbauen.
+Im [[CleanCode/Orangener Grad|Orangenen Grad]] haben wir [[CleanCode/Integration Tests]] eingeführt, nun geht es um [[CleanCode/Unit Test|Unit Tests]]. Im Gegensatz zu [[CleanCode/Integration Tests|Integrationstests]] wird bei [[CleanCode/Unit Test|Unit Tests]] eine einzelne Funktionseinheit (vor allem Klassen, aber auch Methoden oder Komponenten) isoliert getestet. Dazu ist es erforderlich, diese Funktionseinheit von ihren Abhängigkeiten befreien zu können. Sollen [[CleanCode/Unit Test|Unit Tests]] im Nachhinein für bestehenden Code ergänzt werden, sind häufig Refaktorisierungen erforderlich. Wir haben durch die [[CleanCode/Integration Tests|Integrationstests]] die Sicherheit, dass wir dabei keine Fehler einbauen.
 
 Automatisierte Tests bieten zweifachen Nutzen:
 

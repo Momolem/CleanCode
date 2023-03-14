@@ -7,14 +7,14 @@ tags: #cleancode
 
 # Blauer Grad
 ## Prinzipien
-- [[Design and Implementation Don't Overlapp]]
-- [[Implementation Reflects Design]]
-- [[You Ain't Gonna Need It]]
+- [[CleanCode/Design and Implementation Don't Overlapp]]
+- [[CleanCode/Implementation Reflects Design]]
+- [[CleanCode/You Ain't Gonna Need It]]
 
 ## Prakiken
-- [[Design before Implementation]]
-- [[Continuous Delivery]]
-- [[Iterative Development]]
-- [[Incremental Development]]
-- [[Component Orientation]]
-- [[Test First]]
+- [[CleanCode/Design before Implementation]]
+- [[CleanCode/Continuous Delivery]]
+- [[CleanCode/Iterative Development]]
+- [[CleanCode/Incremental Development]]
+- [[CleanCode/Component Orientation]]
+- [[CleanCode/Test First]]

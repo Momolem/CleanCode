@@ -203,23 +203,23 @@ class Application is
 ##  Pros and Cons
 | Pros | Cons |
 | --- | --- |
-| _[[Open Closed Principle]]_. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface). | Subscribers are notified in random order.|
+| _[[CleanCode/Open Closed Principle]]_. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface). | Subscribers are notified in random order.|
 | You can establish relations between objects at runtime. ||
 
 ##  Relations with Other Patterns
 
--   [[Chain of Responsibility]], [[Command]], [[Mediator]] and [[Observer]] address various ways of connecting senders and receivers of requests:
+-   [[CleanCode/Chain of Responsibility]], [[CleanCode/Command]], [[CleanCode/Mediator]] and [[CleanCode/Observer]] address various ways of connecting senders and receivers of requests:
     
     -   _Chain of Responsibility_ passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
     -   _Command_ establishes unidirectional connections between senders and receivers.
     -   _Mediator_ eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_ lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   The difference between [[Mediator]] and [[Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
+-   The difference between [[CleanCode/Mediator]] and [[CleanCode/Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
     
-    The primary goal of _[[Mediator]]_ is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of _[[Observer]]_ is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
+    The primary goal of _[[CleanCode/Mediator]]_ is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of _[[CleanCode/Observer]]_ is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
     
-    There’s a popular implementation of the _[[Mediator]]_ pattern that relies on _[[Observer]]_. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When _[[Mediator]]_ is implemented this way, it may look very similar to _[[Observer]]_.
+    There’s a popular implementation of the _[[CleanCode/Mediator]]_ pattern that relies on _[[CleanCode/Observer]]_. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When _[[CleanCode/Mediator]]_ is implemented this way, it may look very similar to _[[CleanCode/Observer]]_.
     
-    When you’re confused, remember that you can implement the [[Mediator]] pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble _[[Observer]]_ but will still be an instance of the [[Mediator]] pattern.
+    When you’re confused, remember that you can implement the [[CleanCode/Mediator]] pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble _[[CleanCode/Observer]]_ but will still be an instance of the [[CleanCode/Mediator]] pattern.
     
     Now imagine a program where all components have become publishers, allowing dynamic connections between each other. There won’t be a centralized mediator object, only a distributed set of observers.

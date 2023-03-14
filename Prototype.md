@@ -192,10 +192,10 @@ class Application is
 | You get an alternative to inheritance when dealing with configuration presets for complex objects.||
 
 ## Relations with Other Patterns
-- Many designs start by using [[Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[Abstract Factory]], Prototype, or [[Builder]] (more flexible, but more complicated).
-- Abstract [[Factory]] classes are often based on a set of [[Factory]] Methods, but you can also use Prototype to compose the methods on these classes.
+- Many designs start by using [[CleanCode/Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[CleanCode/Abstract Factory]], Prototype, or [[CleanCode/Builder]] (more flexible, but more complicated).
+- Abstract [[CleanCode/Factory]] classes are often based on a set of [[CleanCode/Factory]] Methods, but you can also use Prototype to compose the methods on these classes.
 - Prototype can help when you need to save copies of Commands into history.
 - Designs that make heavy use of Composite and Decorator can often benefit from using Prototype. Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
-- Prototype isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand, Prototype requires a complicated initialization of the cloned object. [[Factory]] Method is based on inheritance but doesn’t require an initialization step.
+- Prototype isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand, Prototype requires a complicated initialization of the cloned object. [[CleanCode/Factory]] Method is based on inheritance but doesn’t require an initialization step.
 - Sometimes Prototype can be a simpler alternative to Memento. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
-- [[Abstract Factory]], [[Builder|Builders]] and [[Prototype]] can all be implemented as [[Singleton]].
+- [[CleanCode/Abstract Factory]], [[CleanCode/Builder|Builders]] and [[CleanCode/Prototype]] can all be implemented as [[CleanCode/Singleton]].

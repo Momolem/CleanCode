@@ -271,12 +271,12 @@ class Application is
 | --- | --- |
 | You can construct objects step-by-step, defer construction steps or run steps recursively. |  The overall complexity of the code increases since the pattern requires creating multiple new classes. |
 | You can reuse the same construction code when building various representations of products. ||
-| [[Single Responsibility Principle]]. You can isolate complex construction code from the business logic of the product. ||
+| [[CleanCode/Single Responsibility Principle]]. You can isolate complex construction code from the business logic of the product. ||
 
 
 ## Relations with Other Patterns
-- Many designs start by using [[Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[Abstract Factory]], [[Prototype]], or [[Builder]] (more flexible, but more complicated).
-- Builder focuses on constructing complex objects step by step. [[Abstract Factory]] specializes in creating families of related objects. [[Abstract Factory]] returns the product immediately, whereas Builder lets you run some additional construction steps before fetching the product.
-- You can use Builder when creating complex [[Composite]] trees because you can program its construction steps to work recursively.
-- You can combine Builder with [[Bridge]]: the director class plays the role of the abstraction, while different builders act as implementations.
-- [[Abstract Factory|Abstract Factories]], [[Builder|Builders]] and [[Prototype|Prototypes]] can all be implemented as [[Singleton|Singletons]].
+- Many designs start by using [[CleanCode/Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[CleanCode/Abstract Factory]], [[CleanCode/Prototype]], or [[CleanCode/Builder]] (more flexible, but more complicated).
+- Builder focuses on constructing complex objects step by step. [[CleanCode/Abstract Factory]] specializes in creating families of related objects. [[CleanCode/Abstract Factory]] returns the product immediately, whereas Builder lets you run some additional construction steps before fetching the product.
+- You can use Builder when creating complex [[CleanCode/Composite]] trees because you can program its construction steps to work recursively.
+- You can combine Builder with [[CleanCode/Bridge]]: the director class plays the role of the abstraction, while different builders act as implementations.
+- [[CleanCode/Abstract Factory|Abstract Factories]], [[CleanCode/Builder|Builders]] and [[CleanCode/Prototype|Prototypes]] can all be implemented as [[CleanCode/Singleton|Singletons]].

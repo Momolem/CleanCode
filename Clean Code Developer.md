@@ -7,12 +7,12 @@ title: Clean Code Developer
 # Clean Code Developer
 
 ## Die Grade
-- [[Roter Grad]]
-- [[Orangener Grad]]
-- [[Gelber Grad]]
-- [[Grüner Grad]]
-- [[Blauer Grad]]
-- [[Weißer Grad]]
+- [[CleanCode/Roter Grad]]
+- [[CleanCode/Orangener Grad]]
+- [[CleanCode/Gelber Grad]]
+- [[CleanCode/Grüner Grad]]
+- [[CleanCode/Blauer Grad]]
+- [[CleanCode/Weißer Grad]]
 ## Wertesystem
 ### Wandelbarkeit
 
@@ -79,39 +79,39 @@ Werte: Wandelbarkeit, Kontinuierliche Verbesserung
 
 Werte: Produktionseffizienz, Wandelbarkeit
 
-- Vorsicht vor Optimierungen! (Prinzip des [[Roter Grad|roten Grades]])
-- [[You Ain't Gonna Need It]] (Prinzip des [[Blauer Grad|blauen Grades]])
-- [[KISS]] (Prinzip des [[Roter Grad|roten Grades]])
+- Vorsicht vor Optimierungen! (Prinzip des [[CleanCode/Roter Grad|roten Grades]])
+- [[CleanCode/You Ain't Gonna Need It]] (Prinzip des [[CleanCode/Blauer Grad|blauen Grades]])
+- [[CleanCode/KISS]] (Prinzip des [[CleanCode/Roter Grad|roten Grades]])
 
 #### 3. Isoliere Aspekte (Isolate Aspects (IA))
 
 Werte: 
 - Wandelbarkeit
-- [[DRY]]
-- [[Separation of Concerns]]
-- [[Single Level of Abstraction]]
-- [[Single Responsibility Principle]]
-- [[Interface Segragation Principle]]
-- [[Design and Implementation Don't Overlapp]]
-- [[Integration Operation Segregation Principle (IOSP)]]
+- [[CleanCode/DRY]]
+- [[CleanCode/Separation of Concerns]]
+- [[CleanCode/Single Level of Abstraction]]
+- [[CleanCode/Single Responsibility Principle]]
+- [[CleanCode/Interface Segragation Principle]]
+- [[CleanCode/Design and Implementation Don't Overlapp]]
+- [[CleanCode/Integration Operation Segregation Principle (IOSP)]]
 
 #### 4. Minimiere Abhängigkeiten (Minimize Dependencies (MD))
 
 Werte:
 -   Wandelbarkeit
-- [[Dependency Inversion Principle]]
-- [[Information Hiding Principle]]
-- [[Law of Demeter]]
-- [[Tell, don't ask]]
+- [[CleanCode/Dependency Inversion Principle]]
+- [[CleanCode/Information Hiding Principle]]
+- [[CleanCode/Law of Demeter]]
+- [[CleanCode/Tell, don't ask]]
 
 #### 5. Halte Versprechen ein (Honor Pledges (HP))
 
 Werte: 
 - Wandelbarkeit oder auch: Minimize Surprises
-- [[Liskov Substitution Principle]]
-- [[Principle of Least Astonishment]]
+- [[CleanCode/Liskov Substitution Principle]]
+- [[CleanCode/Principle of Least Astonishment]]
 - Implementation spiegelt Entwurf
-- [[Favour Composition over Inheritance]] (FCoI)
+- [[CleanCode/Favour Composition over Inheritance]] (FCoI)
 
 ### Praktisches
 

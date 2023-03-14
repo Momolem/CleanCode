@@ -6,10 +6,10 @@ tags: #cleancode/designpatterns
 
 # Singleton
 ## Intent
-**Singleton** is a [[Design Patterns#Creational|creational design pattern]] that lets you ensure that a class has **only one instance**, while providing a global access point to this instance.
+**Singleton** is a [[CleanCode/Design Patterns#Creational|creational design pattern]] that lets you ensure that a class has **only one instance**, while providing a global access point to this instance.
 
 ## Problem
-The Singleton pattern solves two problems at the same time, violating the _[[Single Responsibility Principle]]_:
+The Singleton pattern solves two problems at the same time, violating the _[[CleanCode/Single Responsibility Principle]]_:
 
 1.  **Ensure that a class has just a single instance**. Why would anyone want to control how many instances a class has? The most common reason for this is to control access to some shared resource—for example, a database or a file.
     
@@ -116,17 +116,17 @@ class Application is
 ## Pro and  Cons
 | Pros | Cons |
 | --- | --- |
-| You can be sure that a class has only a single instance. | Violates the _[[Single Responsibility Principle]]_. The pattern solves two problems at the time. |
+| You can be sure that a class has only a single instance. | Violates the _[[CleanCode/Single Responsibility Principle]]_. The pattern solves two problems at the time. |
 | You gain a global access point to that instance. |  The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. |
 | The singleton object is initialized only when it’s requested for the first time. |  The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. |
 | | The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other. |
 | | The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times. |
-| | It may be difficult to [[Unit Test]] the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern. |
+| | It may be difficult to [[CleanCode/Unit Test]] the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern. |
 
 ## Relationship with Other Patterns
--   A [[Facade]] class can often be transformed into a [[Singleton]] since a single facade object is sufficient in most cases.
+-   A [[CleanCode/Facade]] class can often be transformed into a [[CleanCode/Singleton]] since a single facade object is sufficient in most cases.
     
--   [[Flyweight]] would resemble [[Singleton]] if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
-    1.  There should be only one Singleton instance, whereas a _[[Flyweight]]_ class can have multiple instances with different intrinsic states.
-    2.  The _Singleton_ object can be mutable. [[Flyweight]] objects are immutable.
--   [[Abstract Factory]], [[Builder]] and [[Prototype]] can all be implemented as [[Singleton]].
+-   [[CleanCode/Flyweight]] would resemble [[CleanCode/Singleton]] if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
+    1.  There should be only one Singleton instance, whereas a _[[CleanCode/Flyweight]]_ class can have multiple instances with different intrinsic states.
+    2.  The _Singleton_ object can be mutable. [[CleanCode/Flyweight]] objects are immutable.
+-   [[CleanCode/Abstract Factory]], [[CleanCode/Builder]] and [[CleanCode/Prototype]] can all be implemented as [[CleanCode/Singleton]].

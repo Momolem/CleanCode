@@ -178,7 +178,7 @@ class ApplicationConfigurator is
 ## Applicability
 - **Use the Abstract Factory when your code needs to work with various families of related products, but you don’t want it to depend on the concrete classes of those products—they might be unknown beforehand or you simply want to allow for future extensibility.**
 	The Abstract Factory provides you with an interface for creating objects from each class of the product family. As long as your code creates objects via this interface, you don’t have to worry about creating the wrong variant of a product which doesn’t match the products already created by your app.
-	- Consider implementing the Abstract Factory when you have a class with a set of [[Factory]] that blur its primary responsibility.
+	- Consider implementing the Abstract Factory when you have a class with a set of [[CleanCode/Factory]] that blur its primary responsibility.
 	- In a well-designed program _each class is responsible only for one thing_. When a class deals with multiple product types, it may be worth extracting its factory methods into a stand-alone factory class or a full-blown Abstract Factory implementation.
 
 ## How to Implement
@@ -194,13 +194,13 @@ class ApplicationConfigurator is
 | --- | --- |
 | You can be sure that the products you’re getting from a factory are compatible with each other. | The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern. |
 | You avoid tight coupling between concrete products and client code. | |
-| _[[Single Responsibility Principle]]_. You can extract the product creation code into one place, making the code easier to support. ||
-| _[[Open Closed Principle]]_. You can introduce new variants of products without breaking existing client code.|| 
+| _[[CleanCode/Single Responsibility Principle]]_. You can extract the product creation code into one place, making the code easier to support. ||
+| _[[CleanCode/Open Closed Principle]]_. You can introduce new variants of products without breaking existing client code.|| 
 
 ## Relations with Other Patterns
-- Many designs start by using [[Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[Abstract Factory]], [[Prototype]], or [[Builder]] (more flexible, but more complicated).
-- [[Builder]] focuses on constructing complex objects step by step. [[Abstract Factory]] specializes in creating families of related objects. [[Abstract Factory]] returns the product immediately, whereas [[Builder]] lets you run some additional construction steps before fetching the product.
-- [[Abstract Factory]] classes are often based on a set of [[Factory]] Methods, but you can also use [[Prototype]] to compose the methods on these classes.
-- [[Abstract Factory]] can serve as an alternative to [[Facade]] when you only want to hide the way the subsystem objects are created from the client code.
-- You can use [[Abstract Factory]] along with [[Bridge]]. This pairing is useful when some abstractions defined by [[Bridge]] can only work with specific implementations. In this case, [[Abstract Factory]] can encapsulate these relations and hide the complexity from the client code.
-- [[Abstract Factory]], [[Builder]] and [[Prototype]] can all be implemented as [[Singleton]].
+- Many designs start by using [[CleanCode/Factory]] Method (less complicated and more customizable via subclasses) and evolve toward [[CleanCode/Abstract Factory]], [[CleanCode/Prototype]], or [[CleanCode/Builder]] (more flexible, but more complicated).
+- [[CleanCode/Builder]] focuses on constructing complex objects step by step. [[CleanCode/Abstract Factory]] specializes in creating families of related objects. [[CleanCode/Abstract Factory]] returns the product immediately, whereas [[CleanCode/Builder]] lets you run some additional construction steps before fetching the product.
+- [[CleanCode/Abstract Factory]] classes are often based on a set of [[CleanCode/Factory]] Methods, but you can also use [[CleanCode/Prototype]] to compose the methods on these classes.
+- [[CleanCode/Abstract Factory]] can serve as an alternative to [[CleanCode/Facade]] when you only want to hide the way the subsystem objects are created from the client code.
+- You can use [[CleanCode/Abstract Factory]] along with [[CleanCode/Bridge]]. This pairing is useful when some abstractions defined by [[CleanCode/Bridge]] can only work with specific implementations. In this case, [[CleanCode/Abstract Factory]] can encapsulate these relations and hide the complexity from the client code.
+- [[CleanCode/Abstract Factory]], [[CleanCode/Builder]] and [[CleanCode/Prototype]] can all be implemented as [[CleanCode/Singleton]].

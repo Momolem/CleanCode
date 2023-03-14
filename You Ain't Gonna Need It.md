@@ -11,7 +11,7 @@ tags: #cleancode
 >**Warum?**
 Dinge die niemand braucht, haben keinen Wert. Verschwende an sie also keine Zeit.
 
-Das YAGNI-Prinzip (_You Ain´t Gonna Need It_) ist eines der einfachsten in der Softwareentwicklung – und doch wohl das nach dem [[DRY]]-Prinzip am häufigsten verletzte Prinzip. Deshalb steht YAGNI nicht nur am Anfang des [[Roter Grad|roten Grades]], sondern auch hier gegen Ende des Weges durch das [[Clean Code Developer#Wertesystem|Wertesystem]].
+Das YAGNI-Prinzip (_You Ain´t Gonna Need It_) ist eines der einfachsten in der Softwareentwicklung – und doch wohl das nach dem [[CleanCode/DRY]]-Prinzip am häufigsten verletzte Prinzip. Deshalb steht YAGNI nicht nur am Anfang des [[CleanCode/Roter Grad|roten Grades]], sondern auch hier gegen Ende des Weges durch das [[CleanCode/Clean Code Developer#Wertesystem|Wertesystem]].
 
 Geschuldet ist das YAGNI-Prinzip dem in der Softwareentwicklung besonderen Verhältnis von Anforderungsgenauigkeit und Produktmaterialität. Anforderungen sind notorisch ungenau oder wechselnd und das Produkt, in dem sie umgesetzt werden sollen, immateriell. Im Vergleich zum Maschinen- oder Gebäudebau ist das Material also unendlich flexibel und kann sich prinzipiell mit vergleichsweise wenig Aufwand an quasi jede Anforderung anpassen lassen. Hohe Volatiliät bzw. Ungenauigkeit trifft also auf hohe Flexibilität. Das scheint zunächst einmal ideal.
 
@@ -27,7 +27,7 @@ Langfristig ist solches Verhalten allerdings kontraproduktiv:
 
 Unklare und wechselnde Anforderungssituationen vor dem Hintergrund der hohen grundsätzlichen Flexibilität von Software führen schnell zu unnötigen Aufwänden und sprödem Code. Eine große Anzahl von Projekten, die ihre Budgetgrenzen gesprengt haben, und eine noch größere Zahl von Projekten, die schon nach wenigen Jahren unwartbar geworden sind, sind dafür beredtes Zeugnis.
 
-[[Clean Code Developer|CCD]] als professionelle Softwareentwickler sehen es als ihre Pflicht, sich solcher Entwicklung jeden Tag entgegen zu stemmen. Angesichts der nicht zu leugnenden Natur von Software – sie ist und bleibt immateriell -, liegt der Ansatz dafür beim Umgang mit den Anforderungen. Das ist der Ursprung des YAGNI-Prinzips.
+[[CleanCode/Clean Code Developer|CCD]] als professionelle Softwareentwickler sehen es als ihre Pflicht, sich solcher Entwicklung jeden Tag entgegen zu stemmen. Angesichts der nicht zu leugnenden Natur von Software – sie ist und bleibt immateriell -, liegt der Ansatz dafür beim Umgang mit den Anforderungen. Das ist der Ursprung des YAGNI-Prinzips.
 
 Das YAGNI-Prinzip ist wie ein scharfes Messer: Wer sie anwendet, schneidet ein Problem in kleine Würfel des unmittelbar Nötigen. Nach dem YAGNI-Prinzip wird nur das unzweifelhaft und unmittelbar Nutzbringende implementiert. Alles andere… nun, das kommt später. Insofern geht YAGNI Hand in Hand mit der Regel „Entscheide so spät wie möglich“ des [Lean Software Development](http://en.wikipedia.org/wiki/Lean_software_development#Decide_as_late_as_possible).
 
@@ -44,10 +44,10 @@ Das bedeutet für die Softwareentwicklung:
 -   Die klaren Anforderungen in der Reihenfolge ihrer Priorisierung umsetzen.
 -   Entwicklungsprozess und Codestruktur im Großen und Kleinen so aufsetzen, dass keine Angst aufkommt, sich ändernde und neue Anforderungen zu realisieren.
 
-[[Clean Code Developer|CCD]] als professionelle Entwickler kommunizieren diese Vorgehensweise unmissverständlich dem Kunden gegenüber. Dadurch werden sie:
+[[CleanCode/Clean Code Developer|CCD]] als professionelle Entwickler kommunizieren diese Vorgehensweise unmissverständlich dem Kunden gegenüber. Dadurch werden sie:
 
 -   servicewillig, denn sie müssen dem Kunden keine klare Anforderung abschlagen
 -   verantwortungsbewusst, weil sie das Budget nur für klar formulierten Nutzen einsetzen
 -   beschützend dem Code gegenüber, weil sie ihn gegen Überladung mit letztlich Unnötigem bewahren
 
-YAGNI ist deshalb nicht nur ein Prinzip, das jeder Entwickler befolgen soll, sondern auch ein Prinzip für Projekte und Teams, also auf Organisationsebene. YAGNI ist immer in Anschlag zu bringen, genauso wie [[DRY]]. Wenn im Zweifel, dann verschiebe die Entscheidung falls möglich. Ansonsten entscheide dich gegen den Aufwand. Das entspannt und entschlackt und führt schneller zum Erfolg.
+YAGNI ist deshalb nicht nur ein Prinzip, das jeder Entwickler befolgen soll, sondern auch ein Prinzip für Projekte und Teams, also auf Organisationsebene. YAGNI ist immer in Anschlag zu bringen, genauso wie [[CleanCode/DRY]]. Wenn im Zweifel, dann verschiebe die Entscheidung falls möglich. Ansonsten entscheide dich gegen den Aufwand. Das entspannt und entschlackt und führt schneller zum Erfolg.

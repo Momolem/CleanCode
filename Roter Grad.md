@@ -6,15 +6,15 @@ title: Roter Grad
 #cleancode
 # Roter Grad
 ## Prinzipien
-- [[DRY]]
-- [[KISS]]
-- [[Beware of Premature Optimization]]
-- [[Favour Composition over Inheritance]]
-- [[Integration Operation Segregation Principle (IOSP)]]
+- [[CleanCode/DRY]]
+- [[CleanCode/KISS]]
+- [[CleanCode/Beware of Premature Optimization]]
+- [[CleanCode/Favour Composition over Inheritance]]
+- [[CleanCode/Integration Operation Segregation Principle (IOSP)]]
 
 ## Praktiken
-- [[Boy Scout Rule]]
-- [[Root Cause Analysis]]
-- [[Version Control System]]
-- [[Simple Refactorings]]
-- [[Daily Reflection]]
+- [[CleanCode/Boy Scout Rule]]
+- [[CleanCode/Root Cause Analysis]]
+- [[CleanCode/Version Control System]]
+- [[CleanCode/Simple Refactorings]]
+- [[CleanCode/Daily Reflection]]
