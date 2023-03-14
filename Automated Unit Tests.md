@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: Automated Unit Tests
+---
 #cleancode 
 # Automated [[Unit Test|Unit Tests]]
 

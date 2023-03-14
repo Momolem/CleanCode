@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Design before Implementation
 ---
 tags: #cleancode 
 

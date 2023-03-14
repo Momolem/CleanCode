@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode/designpatterns]
+title: Template Method
 ---
 tags:  #cleancode/designpatterns 
 

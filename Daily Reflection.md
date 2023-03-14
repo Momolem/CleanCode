@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: Daily Reflection
+---
 #cleancode 
 # Daily Reflection
 >**Warum?**

@@ -1,5 +1,8 @@
 ---
-aliases: [YAGNI]
+aliases: [You Ain’t Gonna Need It , YAGNI]
+tags: [cleancode]
+linter-yaml-title-alias: You Ain’t Gonna Need It 
+title: You Ain’t Gonna Need It 
 ---
 tags: #cleancode 
 

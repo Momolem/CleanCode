@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Source Code Conventions
 ---
 tags: #cleancode 
 

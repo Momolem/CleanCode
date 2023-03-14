@@ -1,3 +1,9 @@
+---
+tags: [cleancode]
+aliases: [Open Closed Principle (OCP)]
+linter-yaml-title-alias: Open Closed Principle (OCP)
+title: Open Closed Principle (OCP)
+---
 #cleancode 
 # Open Closed Principle (OCP)
 >[!question] **Warum?**

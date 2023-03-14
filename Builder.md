@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode/designpatterns]
+title: Builder
 ---
 tags:  #cleancode/designpatterns 
 

@@ -1,5 +1,7 @@
 ---
 aliases: [Flyweight Factory, Cache]
+tags: [cleancode/designpatterns]
+title: Flyweight
 ---
 tags:  #cleancode/designpatterns 
 

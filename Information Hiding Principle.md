@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: Information Hiding Principle
+---
 #cleancode 
 # Information Hiding Principle
 

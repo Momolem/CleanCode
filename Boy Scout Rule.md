@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: Boy Scout Rule
+---
 #cleancode 
 # Boy Scout Rule
 

@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Automated Integrationtests
 ---
 tags: #cleancode 
 

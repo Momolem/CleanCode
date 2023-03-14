@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Statical Code Analysis
 ---
 tags:  #cleancode 
 

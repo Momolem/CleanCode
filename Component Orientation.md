@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Component Orientation
 ---
 tags: #cleancode 
 

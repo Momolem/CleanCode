@@ -1,5 +1,7 @@
 ---
 aliases: [Red Grade]
+tags: [cleancode]
+title: Roter Grad
 ---
 #cleancode
 # Roter Grad

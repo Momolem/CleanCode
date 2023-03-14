@@ -1,5 +1,8 @@
 ---
-aliases: []
+aliases: [Single Level of Abstraction (SLA)]
+tags: [cleancode]
+linter-yaml-title-alias: Single Level of Abstraction (SLA)
+title: Single Level of Abstraction (SLA)
 ---
 tags:  #cleancode 
 

@@ -1,5 +1,7 @@
 ---
 aliases: [IoC]
+tags: [cleancode]
+title: Inversion of Control Container
 ---
 #cleancode 
 # Inversion of Control Container

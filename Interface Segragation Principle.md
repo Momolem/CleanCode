@@ -1,3 +1,9 @@
+---
+tags: [cleancode]
+aliases: [Interface Segregation Principle (ISP)]
+linter-yaml-title-alias: Interface Segregation Principle (ISP)
+title: Interface Segregation Principle (ISP)
+---
 #cleancode 
 # Interface Segregation Principle (ISP)
 

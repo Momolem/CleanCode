@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Partizipation in Professional Events
 ---
 tags: #cleancode 
 

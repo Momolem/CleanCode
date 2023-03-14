@@ -1,5 +1,7 @@
 ---
-aliases: [Event-Subscriber, Listener]
+aliases: [Event-Subscriber, Listener]
+tags: [cleancode/designpatterns]
+title: Observer
 ---
 tags:  #cleancode/designpatterns 
 

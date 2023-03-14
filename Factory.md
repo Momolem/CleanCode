@@ -1,6 +1,6 @@
 ---
-aliases: []
-tags: 
+tags: [cleancode/designpatterns]
+title: Factory
 ---
 #cleancode/designpatterns 
 # Factory

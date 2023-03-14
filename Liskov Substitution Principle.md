@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: Liskov Substitution Principle
+---
 #cleancode 
 # Liskov Substitution Principle
 

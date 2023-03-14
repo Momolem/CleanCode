@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode/designpatterns]
+title: State
 ---
 tags:  #cleancode/designpatterns 
 
@@ -242,7 +243,7 @@ class PlayingState extends State is
 
 ## Pro and  Cons
 Pros | Cons
---- | ---
+---| ---
 _[[Single Responsibility Principle]]_. Organize the code related to particular states into separate classes. | Applying the pattern can be overkill if a state machine has only a few states or rarely changes. 
 _[[Open Closed Principle]]_. Introduce new states without changing existing state classes or the context. |
 Simplify the code of the context by eliminating bulky state machine conditionals. |

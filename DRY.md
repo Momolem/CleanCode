@@ -1,3 +1,9 @@
+---
+tags: [cleancode]
+aliases: [Don’t Repeat Yourself (DRY)]
+linter-yaml-title-alias: Don’t Repeat Yourself (DRY)
+title: Don’t Repeat Yourself (DRY)
+---
 #cleancode 
 # Don’t Repeat Yourself (DRY)
 

@@ -1,5 +1,8 @@
 ---
-aliases: []
+aliases: [Separation of Concerns (SoC)]
+tags: [cleancode]
+linter-yaml-title-alias: Separation of Concerns (SoC)
+title: Separation of Concerns (SoC)
 ---
 tags:  #cleancode 
 

@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Implementation Reflects Design
 ---
 tags: #cleancode 
 

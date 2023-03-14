@@ -1,5 +1,7 @@
 ---
 aliases: [Entwurfsmuster]
+tags: [cleancode/designpatterns, cleancode/refactoring]
+title: Design Patterns
 ---
 tags: #cleancode/designpatterns #cleancode/refactoring 
 

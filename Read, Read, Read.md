@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Read, Read, Read
 ---
 tags: #cleancode 
 

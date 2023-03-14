@@ -1,5 +1,7 @@
 ---
 aliases: [Wrapper]
+tags: [cleancode/designpatterns]
+title: Adapter
 ---
 tags:  #cleancode/designpatterns 
 

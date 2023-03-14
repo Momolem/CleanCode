@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode/designpatterns]
+title: Visitor
 ---
 tags:  #cleancode/designpatterns 
 

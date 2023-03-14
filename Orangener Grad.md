@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: Orangener Grad
+---
 #cleancode 
 # Orangener Grad
 ## Prinzipien

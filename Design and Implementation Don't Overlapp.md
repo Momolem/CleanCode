@@ -1,5 +1,8 @@
 ---
-aliases: []
+aliases: [Design and Implementation Don’t Overlapp]
+tags: [cleancode]
+linter-yaml-title-alias: Design and Implementation Don’t Overlapp
+title: Design and Implementation Don’t Overlapp
 ---
 tags: #cleancode 
 

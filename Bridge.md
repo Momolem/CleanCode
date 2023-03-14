@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode/designpatterns]
+title: Bridge
 ---
 tags:  #cleancode/designpatterns 
 

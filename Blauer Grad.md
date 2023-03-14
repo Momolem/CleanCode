@@ -1,5 +1,7 @@
 ---
 aliases: [Blue Grade]
+tags: [cleancode]
+title: Blauer Grad
 ---
 tags: #cleancode 
 

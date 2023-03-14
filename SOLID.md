@@ -1,3 +1,7 @@
+---
+tags: [cleancode]
+title: SOLID
+---
 #cleancode 
 # SOLID
 The SOLID Principles are a part of the [[Clean Code]] Principles. The letters stand for:

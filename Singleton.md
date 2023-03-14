@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode/designpatterns, 1]
+title: Singleton
 ---
 tags: #cleancode/designpatterns 
 

@@ -1,5 +1,7 @@
 ---
-aliases: [Intermediary, Controller]
+aliases: [Intermediary, Controller]
+tags: [cleancode/designpatterns]
+title: Mediator
 ---
 tags:  #cleancode/designpatterns 
 

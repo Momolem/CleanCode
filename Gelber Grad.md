@@ -1,5 +1,7 @@
 ---
 aliases: [Yellow Grade]
+tags: [cleancode]
+title: Gelber Grad
 ---
 #cleancode 
 # Gelber Grad

@@ -1,5 +1,6 @@
 ---
-aliases: []
+tags: [cleancode]
+title: Incremental Development
 ---
 tags: #cleancode 
 
